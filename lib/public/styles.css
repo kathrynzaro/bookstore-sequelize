@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio&family=Archivo&family=Arvo:wght@400;700&family=Bangers&family=BioRhyme&family=Bungee+Inline&family=Chicle&family=Comfortaa:wght@300&family=Creepster&family=Encode+Sans+Semi+Expanded&family=Epilogue&family=Grand+Hotel&family=Great+Vibes&family=Griffy&family=IM+Fell+French+Canon&family=IM+Fell+French+Canon+SC&family=Inconsolata:wght@200&family=Inter&family=Irish+Grover&family=Josefin+Sans&family=Karla&family=Lato&family=Limelight&family=Manrope&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@400;700&family=Neonderthaw&family=Nixie+One&family=Oswald&family=Philosopher:wght@400;700&family=Poiret+One&family=Poppins&family=Press+Start+2P&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rye&family=Slabo+27px&family=Sora:wght@400;700&family=Space+Grotesk&family=Space+Mono&family=Spectral&family=Syne&family=Tenor+Sans&family=Ultra&family=Unica+One&family=VT323&family=Varela+Round&family=Yeseva+One&display=swap');
+
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
+  /* margin-top: -100px; */
+}
+
+h1 {
+  font-family: 'Chicle', cursive;
+  font-size: 4rem;
+  letter-spacing: 3.5px;
+  color: rgb(192, 92, 92);
+}
+
+table, th, td {
+  border: 3px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: left;
+  background-color: rgb(35, 35, 35);
+  color: antiquewhite;
+}
+
+table {
+  margin: 0 50px 250px;
+}
+
+
+td {
+  font-size: 1.1rem;
+}
+
+th {
+  color: rgb(219, 184, 96);
+  font-size: 1.3rem;
+}
+
+a {
+  color: lightblue;
+  text-decoration: none;
+  opacity: .5;
+  font-weight: 1000;
+  border-bottom: 2px solid lightblue;
+}
+
+a:hover {
+  opacity: 1;
+  transition: all 1s ease 0s;
+
+}
+
+.description {
+  width: 200px;
+}
+

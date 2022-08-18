@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bookshop, Sequelized</title>
+</head>
+<body>
+  <main>
+    <h1>Sequelize Bookshop</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Method</th>
+          <th class="description">Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>/api/v1/authors</td>
+        <td>GET</td>
+        <td>Gets a list of authors</td>
+        <td class="link"><a href="/api/v1/authors">Authors</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/authors/:id</td>
+        <td>GET</td>
+        <td>Gets one author with nested array of books</td>
+        <td class="link"><a href="/api/v1/authors/1">Author 1</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/books</td>
+        <td>GET</td>
+        <td>Gets a list of books</td>
+        <td class="link"><a href="/api/v1/books">Books</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/books/:id</td>
+        <td>GET</td>
+        <td>Gets one book with author</td>
+        <td class="link"><a href="/api/v1/books/1">Book 1</a></td>
+      </tr>
+      <tr>
+        <td>/api/v1/authors/:id/books</td>
+        <td>POST</td>
+        <td>Adds a book</td>
+        <td class="link"></td>
+      </tr>
+      <tr>
+        <td>/api/v1/authors</td>
+        <td>POST</td>
+        <td>Adds an author</td>
+        <td class="link"></td>
+      </tr>
+    </table>
+  </main>
+</body>
+</html>
