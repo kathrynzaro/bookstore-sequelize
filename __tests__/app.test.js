@@ -119,4 +119,44 @@ describe('backend-express-template routes', () => {
     });
   });
 
+  it('#POST /api/v1/authors should create a new author', async () => {
+    const author = {
+      firstName: 'Oscar',
+      lastName: 'Wilde',
+      yearOfBirth: 1854,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+      
+    const res = await request(app).post('/api/v1/authors').send(author);
+    expect(res.status).toBe(200);
+    expect(res.body).toEqual({
+      id: expect.any(Number),
+      firstName: expect.any(String),
+      lastName: expect.any(String),
+      yearOfBirth: expect.any(Number),
+      createdAt: expect.any(String),
+      updatedAt: expect.any(String),
+    });
+  });
+
+  it('#POST /api/v1/authors/:id/books should create a new book', async () => {
+    const book = {
+      title: 'The Beautiful and Damned',
+      published: 1922,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+    const res = await request(app).post('/api/v1/authors/2/books').send(book);
+    expect(res.status).toBe(200);
+    expect(res.body).toEqual({
+      id: expect.any(Number),
+      title: 'The Beautiful and Damned',
+      published: 1922,
+      author_id: 2,
+      createdAt: expect.any(String),
+      updatedAt: expect.any(String),
+    });
+  });
+
 });
