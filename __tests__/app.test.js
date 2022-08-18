@@ -101,6 +101,7 @@ describe('backend-express-template routes', () => {
       author_id: expect.any(Number),
       createdAt: expect.any(String),
       updatedAt: expect.any(String),
+      Author: expect.any(Object),
     });
   });
 
