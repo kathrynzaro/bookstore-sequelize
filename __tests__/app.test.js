@@ -91,4 +91,17 @@ describe('backend-express-template routes', () => {
     });
   });
 
+  it('#GET /books/:id should return book detail', async () => {
+    const res = await request(app).get('/api/v1/books/1');
+    expect(res.status).toBe(200);
+    expect(res.body).toEqual({
+      id: expect.any(Number),
+      title: expect.any(String),
+      published: expect.any(Number),
+      author_id: expect.any(Number),
+      createdAt: expect.any(String),
+      updatedAt: expect.any(String),
+    });
+  });
+
 });
